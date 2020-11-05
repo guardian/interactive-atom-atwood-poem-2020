@@ -4,3 +4,39 @@
 .new-header .new-header__multiline {
   display: none;
 }
+
+.element.element-atom:first-of-type {
+  height: 0;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+figure.element.element-image {
+  img {
+    width: 100%;
+    height: auto;
+  }
+  figcaption {
+    padding: 2px 0 12px;
+    color: $text-main;
+    font-family: "Guardian Text Sans Web", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+  }
+}
+
+.content__main .content__main-column {
+  p, li, & {
+    color: $text-main;
+    a, & > a {
+      color: $text-second;
+      border-bottom: 1px solid rgba($text-main, 0.25);
+      transition: border-bottom 200ms;
+      &:hover {
+        text-decoration: none;
+        border-bottom-color: $text-second;
+      }
+    }
+  }
+}

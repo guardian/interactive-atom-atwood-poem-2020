@@ -9,18 +9,35 @@
   .content__headline {
     font-size: 32px;
     line-height: 36px;
-    width: 264px;
+    width: 8.25em;
     padding: 132px 0 196px;
     margin: 0 auto 0;
     z-index: 2;
     position: relative;
+    transform: translateX(0.2em);
+
+    @include mq(tablet) {
+      font-size: 42px;
+      line-height: 44px;
+      padding: 164px 0 256px;
+      transform: translateX(0.45em);
+    }
+    @include mq(desktop) {
+      padding-left: 294px;
+    }
+    @include mq(leftCol) {
+      font-size: 52px;
+      line-height: 56px;
+      padding: 194px 0 306px 156px;
+    }
+
     span {
       display: block;
     }
     .h {
       font-weight: 700;
       color: $text-main;
-      width: 220px;
+      width: 6.87em;
     }
     .b {
       font-weight: 200;
@@ -53,6 +70,33 @@
         $text-main 5px
       );
 
+      @include mq(mobileLandscape) {
+        left: -20px;
+        right: -20px;
+      }
+      @include mq(desktop) {
+        right: -340px;
+      }
+      @include mq(leftCol) {
+        left: -180px;
+      }
+      @include mq(wide) {
+        left: -260px;
+        right: -420px;
+      }
+    }
+    @include mq(leftCol) {
+      &:after {
+        content: '';
+        position: absolute;
+        top: 16px;
+        left: -10px;
+        bottom: -6px;
+        background-color: $text-main;
+        opacity: 0.25;
+        width: 1px;
+
+      }
     }
   }
 
@@ -66,6 +110,23 @@
     @include mq(mobileLandscape) {
       left: -20px;
       right: -20px;
+    }
+    @include mq(tablet) {
+      height: 640px;
+    }
+    @include mq(desktop) {
+      right: auto;
+      width: 980px;
+    }
+    @include mq(leftCol) {
+      left: -169px;
+      height: 780px;
+      width: 1139px;
+    }
+    @include mq(wide) {
+      left: -249px;
+      height: 780px;
+      width: 1299px;
     }
     img {
       width: 100%;

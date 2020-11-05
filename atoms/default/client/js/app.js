@@ -18,7 +18,7 @@ function changeSeason() {
 
 }
 
-changeSeason();
-setInterval(() => {
-  changeSeason();
-}, 24000)
+// changeSeason();
+// setInterval(() => {
+//   changeSeason();
+// }, 24000)

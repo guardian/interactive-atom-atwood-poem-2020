@@ -36,6 +36,9 @@
     border-left: 1px solid rgba($text-main, 0.25);
     height: 100%;
     padding-left: 6px;
+    .social__action {
+      border: none;
+    }
     .inline-icon {
       border-color: rgba($text-main,0.25);
       &:hover {
