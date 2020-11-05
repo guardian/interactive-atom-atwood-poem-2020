@@ -1,0 +1,51 @@
+.content .content__main {
+
+  .content__main-column {
+    @include mq(tablet) {
+      width: 620px;
+      margin-left: 0;
+    }
+    @include mq(leftCol) {
+      margin-left: 150px;
+      padding-left: 10px;
+    }
+    @include mq(wide) {
+      margin-left: 230px;
+    }
+
+    figure {
+      padding-bottom: 4px;
+      margin-bottom: 0;
+    }
+  }
+
+  // main body, not meta
+  .gs-container:nth-child(2) {
+    p {
+      font-size: 17px;
+      line-height: 24px;
+    }
+    @include mq(leftCol) {
+      .content__main-column {
+        &:before {
+          content: '';
+          position: absolute;
+          top: -16px;
+          left: -1px;
+          bottom: 0;
+          width: 1px;
+          background-color: $text-main;
+          opacity: 0.25;
+
+        }
+      }
+    }
+
+  }
+  @include mq(tablet) {
+    .gs-container {
+      border-left: 1px solid rgba($text-main, 0.25);
+      border-right: 1px solid rgba($text-main, 0.25);
+    }
+  }
+}

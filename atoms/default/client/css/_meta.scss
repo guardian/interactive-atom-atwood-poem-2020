@@ -13,6 +13,22 @@
       height: 1px;
       background-color: $text-main;
       opacity: 0.25;
+      @include mq(mobileLandscape) {
+        left: -20px;
+        right: -20px;
+      }
+      @include mq(tablet) {
+        right: -99px;
+      }
+      @include mq(desktop) {
+        right: -339px;
+      }
+      @include mq(leftCol) {
+        left: -11px;
+      }
+      @include mq(wide) {
+        right: -419px;
+      }
     }
     &:before {
       top: 0;
@@ -32,7 +48,7 @@
         content: '';
         position: absolute;
         top: 0;
-        left: -10px;
+        left: -11px;
         height: 47px;
         background-color: $text-main;
         opacity: 0.25;

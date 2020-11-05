@@ -5,25 +5,29 @@
 
 // Default is autumn
 // [data-season='autumn'] {
-  .content__main .gs-container {
+  .content__main,
+  figure {
     background-color: $season-autumn;
   }
 // }
 
 [data-season='winter'] {
-  .content__main .gs-container {
+  .content__main,
+  figure {
     background-color: $season-winter;
   }
 }
 
 [data-season='spring'] {
-  .content__main .gs-container {
+  .content__main,
+  figure {
     background-color: $season-spring;
   }
 }
 
 [data-season='summer'] {
-  .content__main .gs-container {
+  .content__main,
+  figure {
     background-color: $season-summer;
   }
 }
