@@ -27,6 +27,20 @@
     @include mq(mobileMedium) {
       font-size: 14px;
     }
+    @include mq(leftCol) {
+      &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -10px;
+        height: 47px;
+        background-color: $text-main;
+        opacity: 0.25;
+        width: 1px;
+
+      }
+    }
+
   }
   .meta__extras {
     position: absolute;
@@ -50,4 +64,5 @@
       fill: $text-main;
     }
   }
+
 }

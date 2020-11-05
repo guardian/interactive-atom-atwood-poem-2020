@@ -22,8 +22,9 @@ function splitHeadline(headerEl) {
 
 function injectImage(headerEl) {
   let pictureEl = document.createElement('picture');
-  pictureEl.classList.add('bg-illustration')
-  pictureEl.innerHTML = `<source srcset='https://uploads.guim.co.uk/2020/11/05/Opener.jpg' type='image/jpeg'><source srcset='https://uploads.guim.co.uk/2020/11/05/Opener.webp' type='image/webp'><source srcset='' type='image/avif'><img src='https://uploads.guim.co.uk/2020/11/05/Opener.jpg'>`;
+  pictureEl.classList.add('bg-illustration');
+  // <source srcset='https://uploads.guim.co.uk/2020/11/05/Opener.avif' type='image/avif'></source>
+  pictureEl.innerHTML = `<source srcset='https://uploads.guim.co.uk/2020/11/05/Opener.webp' type='image/webp'><source srcset='https://uploads.guim.co.uk/2020/11/05/Opener.jpg' type='image/jpeg'><img src='https://uploads.guim.co.uk/2020/11/05/Opener.jpg'>`;
   headerEl.parentElement.appendChild(pictureEl);
 }
 
