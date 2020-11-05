@@ -2,6 +2,11 @@ var el = document.createElement('script');
 el.src = '<%= atomPath %>/app.js';
 document.body.appendChild(el);
 
+var el = document.createElement('script');
+el.src = '<%= atomPath %>/poem.js';
+document.body.appendChild(el);
+
+
 function init() {
   setupHeader();
 }
@@ -15,8 +20,6 @@ function setupHeader() {
 
 function splitHeadline(headerEl) {
   const headerText = headerEl.innerText.split(': ');
-  console.log("HIHIHIH")
-  console.log(headerText);
   headerEl.innerHTML = `<span class='h'>${headerText[0]}</span><span class='b'>${headerText[1]}</span>`;
 }
 
