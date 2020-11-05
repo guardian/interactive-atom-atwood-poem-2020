@@ -1,8 +1,79 @@
-.header {
-  width: 100%;
-  min-height: 100vh;
-  background-color: blue;
-  &__inner {
+// Hide default header
+.content__head--interactive {
+  background-color: $season-autumn;
 
+  .content__labels {
+    display: none;
   }
+
+  .content__headline {
+    font-size: 32px;
+    line-height: 36px;
+    width: 264px;
+    padding: 132px 0 196px;
+    margin: 0 auto 0;
+    z-index: 2;
+    position: relative;
+    span {
+      display: block;
+    }
+    .h {
+      font-weight: 700;
+      color: $text-main;
+      width: 220px;
+    }
+    .b {
+      font-weight: 200;
+      color: $text-second;
+    }
+  }
+
+  .content__standfirst {
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 200;
+    color: $text-main;
+    padding: 20px 0 10px;
+    position: relative;
+    &:before {
+      content: '';
+      display: block;
+      height: 20px;
+      opacity: 0.25;
+      position: absolute;
+      left: -10px;
+      right: -10px;
+      top: 0;
+
+      background: repeating-linear-gradient(
+        $text-main,
+        $text-main 1px,
+        rgba(255,0,0,0) 1px,
+        rgba(255,0,0,0) 5px,
+        $text-main 5px
+      );
+
+    }
+  }
+
+  .bg-illustration {
+    position: absolute;
+    top: 0;
+    left: -10px;
+    right: -10px;
+    height: 508px;
+    z-index: 1;
+    @include mq(mobileLandscape) {
+      left: -20px;
+      right: -20px;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
 }
+
+

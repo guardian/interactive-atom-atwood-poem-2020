@@ -8,5 +8,19 @@
     padding: 0;
 }
 
+$text-main: #2B272A;
+$text-second: #D14C3C;
+
+$season-autumn: #FFD2A5;
+$season-winter: #C9E6EE;
+$season-spring: #FBCFC6;
+$season-summer: #FFF29A;
+
+
+@import "base";
+
 @import "header";
+@import "meta";
 @import "poem";
+
+@import "seasons";

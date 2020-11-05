@@ -1,0 +1,50 @@
+.content__meta-container {
+  .byline {
+    display: none;
+  }
+  .meta__contact-wrap {
+    height: 48px;
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      left: -10px;
+      right: -10px;
+      height: 1px;
+      background-color: $text-main;
+      opacity: 0.25;
+    }
+    &:before {
+      top: 0;
+    }
+    &:after {
+      bottom: 0;
+    }
+  }
+  .content__dateline {
+    color: $text-main;
+    padding: 8px 0;
+    @include mq(mobileMedium) {
+      font-size: 14px;
+    }
+  }
+  .meta__extras {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-top: 0;
+    border-left: 1px solid rgba($text-main, 0.25);
+    height: 100%;
+    padding-left: 6px;
+    .inline-icon {
+      border-color: rgba($text-main,0.25);
+      &:hover {
+        background-color: transparent;
+        border-color: $text-main;
+      }
+    }
+    svg path {
+      fill: $text-main;
+    }
+  }
+}

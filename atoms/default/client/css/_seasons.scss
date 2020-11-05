@@ -1,0 +1,30 @@
+[data-season] .content__main {
+  transition: background-color 12s linear;
+
+}
+
+// Default is autumn
+// [data-season='autumn'] {
+  .content__main .gs-container {
+    background-color: $season-autumn;
+  }
+// }
+
+[data-season='winter'] {
+  .content__main .gs-container {
+    background-color: $season-winter;
+  }
+}
+
+[data-season='spring'] {
+  .content__main .gs-container {
+    background-color: $season-spring;
+  }
+}
+
+[data-season='summer'] {
+  .content__main .gs-container {
+    background-color: $season-summer;
+  }
+}
+
