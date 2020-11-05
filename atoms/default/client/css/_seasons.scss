@@ -1,20 +1,34 @@
 [data-season] .content__main {
   transition: background-color 12s linear;
-
+}
+.poem__images {
+  &__autumn,
+  &__spring,
+  &__summer,
+  &__winter {
+    transition: opacity 12s linear;
+  }
 }
 
+
 // Default is autumn
-// [data-season='autumn'] {
   .content__main,
   figure {
     background-color: $season-autumn;
   }
-// }
+[data-season='autumn'] {
+  .poem__images__autumn {
+    opacity: 1;
+  }
+}
 
 [data-season='winter'] {
   .content__main,
   figure {
     background-color: $season-winter;
+  }
+  .poem__images__winter {
+    opacity: 1;
   }
 }
 
@@ -23,6 +37,9 @@
   figure {
     background-color: $season-spring;
   }
+  .poem__images__spring {
+    opacity: 1;
+  }
 }
 
 [data-season='summer'] {
@@ -30,5 +47,9 @@
   figure {
     background-color: $season-summer;
   }
+  .poem__images__summer {
+    opacity: 1;
+  }
 }
+
 
