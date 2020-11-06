@@ -21,15 +21,18 @@ function startSeasons() {
   changeSeason();
   setInterval(() => {
     changeSeason();
-  }, 30000)
+    // }, 3000);
+  }, 30000);
 }
 
 window.addEventListener('scroll', () => {
   const bodyData = document.body.dataset;
-  if (!bodyData.season) {
-    console.log('might');
-    if (window.scrollY > (window.innerHeight * 2)) {
+  if (window.scrollY > (window.innerHeight * 2)) {
+    document.body.classList.add('has-seasons');
+    if (!bodyData.season) {
       startSeasons();
     }
+  } else {
+    document.body.classList.remove('has-seasons');
   }
 })
