@@ -7,10 +7,8 @@ function hookJump() {
 }
 
 function jumpToPoem() {
-  console.log('hey');
   const poemEl = document.querySelector('.poem');
   const poemY = poemEl.getBoundingClientRect().top + window.scrollY;
-  console.log(poemY)
 
   window.scroll({
     top: poemY,
