@@ -1,9 +1,17 @@
-.content__meta-container {
-  .byline {
+.content__meta-container,
+.article__header .meta {
+  .ios &,
+  .android & {
+    padding-top: 0 !important;
+  }
+
+  .byline,
+  .meta__byline {
     display: none;
   }
-  .meta__contact-wrap {
-    height: 48px;
+  .meta__contact-wrap,
+  .meta__misc {
+    min-height: 48px;
     &:before,
     &:after {
       content: '';
@@ -37,7 +45,8 @@
       bottom: 0;
     }
   }
-  .content__dateline {
+  .content__dateline,
+  .meta__published {
     color: $text-main;
     padding: 8px 0;
     @include mq(mobileMedium) {
@@ -55,6 +64,10 @@
         width: 1px;
 
       }
+    }
+    .alerts,
+    .alerts__label {
+      color: $text-main;
     }
 
   }

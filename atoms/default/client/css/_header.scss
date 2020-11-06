@@ -1,12 +1,15 @@
 // Hide default header
-.content__head--interactive {
+.content__head--interactive,
+.article .article__header {
   background-color: $season-autumn;
 
-  .content__labels {
+  .content__labels,
+  .article-kicker {
     display: none;
   }
 
-  .content__headline {
+  .content__headline,
+  .headline {
     font-size: 32px;
     line-height: 36px;
     width: 8.25em;
@@ -45,13 +48,19 @@
     }
   }
 
-  .content__standfirst {
+  .content__standfirst,
+  .standfirst__inner {
     font-size: 22px;
     line-height: 28px;
     font-weight: 200;
     color: $text-main;
     padding: 20px 0 10px;
     position: relative;
+    .ios &,
+    .android & {
+      padding-left: 12px;
+      padding-right: 12px;
+    }
     &:before {
       content: '';
       display: block;
