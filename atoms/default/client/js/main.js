@@ -1,4 +1,4 @@
-['app', 'poem', 'jump-to-poem'].forEach((s) => {
+['poem', 'jump-to-poem', 'seasons'].forEach((s) => {
   var el = document.createElement('script');
   el.src = `<%= atomPath %>/${s}.js`;
   document.body.appendChild(el);
