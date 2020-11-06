@@ -2,16 +2,18 @@
 function init() {
   const mainEl = document.querySelector('.content__main-column--interactive');
 
-  findPoemStart(mainEl);
+  findPoem(mainEl);
 }
 
-function findPoemStart(mainEl) {
-  let poemStartEl;
+function findPoem(mainEl) {
+  let poemStartEl = false;
   const pAll = mainEl.querySelectorAll('p');
   pAll.forEach((pEl) => {
     if (pEl.innerText.trim() == '***') {
-      pEl.classList.add('poem-start');
-      poemStartEl = pEl;
+      pEl.classList.add('poem-separator');
+      if (!poemStartEl) {
+        poemStartEl = pEl;
+      }
     }
   });
 
@@ -27,10 +29,15 @@ function wrapPoem(mainEl, poemStartEl) {
 
   let poemEl = poemWrapperEl.querySelector('.poem__inner');
 
-  const poemAll = document.querySelectorAll('.poem-start~h2, .poem-start~p');
+  const poemAll = document.querySelectorAll('.poem-separator~h2, .poem-separator~p');
 
+  let poemEnded = false;
   poemAll.forEach((el) => {
-    poemEl.appendChild(el);
+    if (poemEnded || el.classList.contains('poem-separator')) {
+      poemEnded = true;
+    } else {
+      poemEl.appendChild(el);
+    }
   });
 
   addPoemImages(poemWrapperEl, poemEl);

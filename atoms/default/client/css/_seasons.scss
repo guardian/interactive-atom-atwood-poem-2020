@@ -1,6 +1,6 @@
 [data-season] .content__main,
 figure,
-.poem-start,
+.poem-separator,
 .poem__inner {
   transition: background-color 12s linear;
 }
@@ -17,7 +17,7 @@ figure,
 // Default is autumn
   .content__main,
   figure,
-  .poem-start,
+  .poem-separator,
   .poem__inner {
     background-color: $season-autumn;
   }
@@ -30,7 +30,7 @@ figure,
 [data-season='winter'] {
   .content__main,
   figure,
-  .poem-start,
+  .poem-separator,
   .poem__inner {
     background-color: $season-winter;
   }
@@ -42,7 +42,7 @@ figure,
 [data-season='spring'] {
   .content__main,
   figure,
-  .poem-start,
+  .poem-separator,
   .poem__inner {
     background-color: $season-spring;
   }
@@ -54,7 +54,7 @@ figure,
 [data-season='summer'] {
   .content__main,
   figure,
-  .poem-start,
+  .poem-separator,
   .poem__inner {
     background-color: $season-summer;
   }

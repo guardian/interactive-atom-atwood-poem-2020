@@ -1,4 +1,4 @@
-.poem-start {
+.poem-separator {
   height: 16px;
   margin-top: 24px;
   margin-bottom: 0;
@@ -41,6 +41,8 @@
     position: sticky;
     top: 0;
     height: 100vh;
+    z-index: 12;
+
     &__inner {
       position: absolute;
       top: 0;
@@ -96,7 +98,7 @@
 
   }
   &__inner {
-    padding-bottom: 25vh;
+    padding-bottom: 16vh;
     padding-left: 50px;
     margin-top: -25vh;
 
@@ -124,5 +126,9 @@
       line-height: 20px;
       margin-bottom: 8px;
     }
+  }
+
+  & + .poem-separator {
+    margin-top: 0;
   }
 }
