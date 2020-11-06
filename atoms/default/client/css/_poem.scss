@@ -81,7 +81,10 @@
       height: 100vh;
       max-height: 1000px;
       object-fit: cover;
-      object-position: -14.5vh 50%;
+      object-position: -17vh 50%;
+      @include mq(mobileMedium) {
+        object-position: -15vh 50%;
+      }
       @include mq(tablet) {
         object-position: 0 50%;
       }
