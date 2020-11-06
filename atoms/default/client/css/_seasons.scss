@@ -1,6 +1,8 @@
 [data-season] .content__main,
 figure,
 .poem-separator,
+.poem__images__inner:after,
+.poem__images__inner:before,
 .poem__inner {
   transition: background-color 12s linear;
 }
@@ -18,6 +20,8 @@ figure,
   .content__main,
   figure,
   .poem-separator,
+  .poem__images__inner:after,
+  .poem__images__inner:before,
   .poem__inner {
     background-color: $season-autumn;
   }
@@ -31,6 +35,8 @@ figure,
   .content__main,
   figure,
   .poem-separator,
+  .poem__images__inner:after,
+  .poem__images__inner:before,
   .poem__inner {
     background-color: $season-winter;
   }
@@ -43,6 +49,8 @@ figure,
   .content__main,
   figure,
   .poem-separator,
+  .poem__images__inner:after,
+  .poem__images__inner:before,
   .poem__inner {
     background-color: $season-spring;
   }
@@ -55,6 +63,8 @@ figure,
   .content__main,
   figure,
   .poem-separator,
+  .poem__images__inner:after,
+  .poem__images__inner:before,
   .poem__inner {
     background-color: $season-summer;
   }
