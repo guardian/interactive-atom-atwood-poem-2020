@@ -147,11 +147,16 @@
     @include mq(tablet) {
       padding-left: 240px;
     }
+    @include mq(desktop) {
+      width: 710px;
+    }
 
     h2 {
       font-size: 32px;
       line-height: 36px;
+      font-family: "Guardian Headline", "Guardian Egyptian Web", Georgia, serif;
       margin-bottom: 2em;
+      color: $text-main;
       @include mq(tablet) {
         font-size: 42px;
         line-height: 44px;
@@ -161,9 +166,16 @@
         line-height: 56px;
       }
     }
-    p {
+    .poem & p,
+    .content__main .content__main-column .poem & p {
       line-height: 20px;
       margin-bottom: 8px;
+      @include mq(desktop) {
+        font-size: 20px;
+        line-height: 28px;
+        font-family: "Guardian Headline", "Guardian Egyptian Web", Georgia, serif;
+        font-weight: 200;
+      }
     }
   }
 
