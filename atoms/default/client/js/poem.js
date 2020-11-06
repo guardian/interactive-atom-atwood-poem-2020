@@ -1,6 +1,6 @@
 
 function init() {
-  const mainEl = document.querySelector('.content__main-column--interactive');
+  const mainEl = document.querySelector('.content__main-column--interactive, .article__body');
 
   findPoem(mainEl);
 }

@@ -1,7 +1,7 @@
 
 
 function hookJump() {
-  document.querySelectorAll('.content__standfirst em').forEach((el) => {
+  document.querySelectorAll('.content__standfirst em, .standfirst em').forEach((el) => {
     el.addEventListener('click', jumpToPoem);
   })
 }

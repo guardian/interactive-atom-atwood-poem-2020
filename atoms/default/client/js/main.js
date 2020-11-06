@@ -11,7 +11,7 @@ function init() {
 init();
 
 function setupHeader() {
-  const headerEl = document.querySelector('.content__headline');
+  const headerEl = document.querySelector('.content__headline, h1.headline');
   splitHeadline(headerEl);
   injectImage(headerEl);
 }
