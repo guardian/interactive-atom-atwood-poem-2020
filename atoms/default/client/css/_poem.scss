@@ -170,4 +170,8 @@
   & + .poem-separator {
     margin-top: 0;
   }
+
+  & ~ .advert-slot {
+    display: none;
+  }
 }

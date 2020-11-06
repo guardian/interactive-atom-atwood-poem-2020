@@ -4,7 +4,8 @@ figure,
 .poem__images__inner:after,
 .poem__images__inner:before,
 .poem__inner,
-body .article .article__header {
+body .article .article__header,
+body .article .article__body {
   transition: background-color 12s linear;
 }
 .poem__images {
@@ -24,7 +25,8 @@ body .article .article__header {
   .poem__images__inner:after,
   .poem__images__inner:before,
   .poem__inner,
-  body .article .article__header {
+  body .article .article__header,
+  body .article .article__body {
     background-color: $season-autumn;
   }
 [data-season='autumn'] {
@@ -40,7 +42,8 @@ body .article .article__header {
   .poem__images__inner:after,
   .poem__images__inner:before,
   .poem__inner,
-  body .article .article__header {
+  body .article .article__header,
+  body .article .article__body {
     background-color: $season-winter;
   }
   .poem__images__winter {
@@ -55,7 +58,8 @@ body .article .article__header {
   .poem__images__inner:after,
   .poem__images__inner:before,
   .poem__inner,
-  body .article .article__header {
+  body .article .article__header,
+  body .article .article__body {
     background-color: $season-spring;
   }
   .poem__images__spring {
@@ -70,7 +74,8 @@ body .article .article__header {
   .poem__images__inner:after,
   .poem__images__inner:before,
   .poem__inner,
-  body .article .article__header {
+  body .article .article__header,
+  body .article .article__body {
     background-color: $season-summer;
   }
   .poem__images__summer {
