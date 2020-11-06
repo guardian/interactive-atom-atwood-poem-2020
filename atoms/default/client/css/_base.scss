@@ -37,7 +37,9 @@ figure.element.element-image {
 .article__body .prose {
   & > :last-child {
     padding-bottom: calc(100vh - 1175px  - 280px);
-    margin-bottom: 32px;
+  }
+  & > p:last-child {
+    padding-bottom: 56px;
   }
   p, li, & {
     color: $text-main;
