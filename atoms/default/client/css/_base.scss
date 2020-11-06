@@ -41,11 +41,17 @@ figure.element.element-image {
   }
   p, li, & {
     color: $text-main;
-    a, & > a {
+    a, & > a, & > a > em {
       color: $text-second;
       border-bottom: 1px solid rgba($text-main, 0.25);
       text-decoration: none;
       transition: border-bottom 200ms;
+      .ios &,
+      .android & {
+        color: $text-second !important;
+        text-decoration: none !important;
+        background-image: none !important;
+      }
       &:hover {
         text-decoration: none;
         border-bottom-color: $text-second;
