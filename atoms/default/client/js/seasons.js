@@ -24,14 +24,14 @@ function startSeasons() {
   }, 30000);
 }
 
-window.addEventListener('scroll', () => {
-  const bodyData = document.body.dataset;
-  if (window.scrollY > (window.innerHeight * 2)) {
-    document.body.classList.add('has-seasons');
-    if (!bodyData.season) {
-      startSeasons();
-    }
-  } else {
-    document.body.classList.remove('has-seasons');
-  }
-})
+// window.addEventListener('scroll', () => {
+//   const bodyData = document.body.dataset;
+//   if (window.scrollY > (window.innerHeight * 2)) {
+//     document.body.classList.add('has-seasons');
+//     if (!bodyData.season) {
+//       startSeasons();
+//     }
+//   } else {
+//     document.body.classList.remove('has-seasons');
+//   }
+// })
