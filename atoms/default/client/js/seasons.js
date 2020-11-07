@@ -16,6 +16,9 @@ function changeSeason() {
 
 }
 
+
+
+
 function startSeasons() {
   changeSeason();
   setInterval(() => {
@@ -24,6 +27,7 @@ function startSeasons() {
   }, 30000);
 }
 
+document.body.dataset.season = 'autumn';
 // window.addEventListener('scroll', () => {
 //   const bodyData = document.body.dataset;
 //   if (window.scrollY > (window.innerHeight * 2)) {
