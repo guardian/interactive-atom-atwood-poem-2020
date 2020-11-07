@@ -20,6 +20,8 @@
     transform: translateX(0.2em);
     background-color: transparent !important;
 
+
+
     @include mq(tablet) {
       font-size: 42px;
       line-height: 44px;
@@ -28,6 +30,11 @@
     }
     @include mq(desktop) {
       padding-left: 294px;
+      .ios &,
+      .android & {
+        padding-left: 0;
+        transform: translateX(-60px)
+      }
     }
     @include mq(leftCol) {
       font-size: 52px;
