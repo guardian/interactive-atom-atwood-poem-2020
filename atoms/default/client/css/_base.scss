@@ -27,7 +27,10 @@ figure.element.element-image {
     padding: 2px 0 12px;
     color: $text-main;
     @media (prefers-color-scheme: dark) {
-      color: #f6f6f6;
+      .ios &,
+      .android & {
+        color: #f6f6f6;
+      }
     }
 
     font-family: "Guardian Text Sans Web", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
@@ -52,7 +55,10 @@ figure.element.element-image {
   p, li, & {
     color: $text-main;
     @media (prefers-color-scheme: dark) {
-      color: #f6f6f6;
+      .ios &,
+      .android & {
+        color: #f6f6f6;
+      }
     }
 
     a, & > a, & > a > em {

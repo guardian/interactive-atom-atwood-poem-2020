@@ -32,10 +32,29 @@ body .article .article__body {
   body .article .article__header,
   body .article .article__body {
     background-color: $season-autumn;
-    @media (prefers-color-scheme: dark) {
+  }
+
+  .ios .content__main,
+  .android .content__main,
+  .ios figure,
+  .android figure,
+  body.ios,
+  body.android,
+  .ios .poem-separator,
+  .android .poem-separator,
+  .ios .poem__images__inner:after,
+  .android .poem__images__inner:after,
+  .ios .poem__images__inner:before,
+  .android .poem__images__inner:before,
+  .ios .poem__inner,
+  .android .poem__inner,
+  body.ios .article .article__header,
+  body.android .article .article__header,
+  body.ios .article .article__body,
+  body.android .article .article__body {
+      @media (prefers-color-scheme: dark) {
       background-color: #121212 !important;
     }
-
   }
 .has-seasons[data-season='autumn'] {
   .poem__images__autumn {
