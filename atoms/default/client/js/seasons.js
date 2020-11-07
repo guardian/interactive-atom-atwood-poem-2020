@@ -1,6 +1,5 @@
 
 function changeSeason() {
-  console.log('changing season');
   const nextSeason = {
     'autumn': 'winter',
     'winter': 'spring',
