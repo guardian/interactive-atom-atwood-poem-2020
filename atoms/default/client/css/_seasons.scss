@@ -6,7 +6,7 @@ figure,
 .poem__inner,
 body .article .article__header,
 body .article .article__body {
-  transition: background-color 3s linear;
+  // transition: background-color 3s linear;
   // transition: background-color 12s linear;
 }
 .poem__images {
@@ -14,7 +14,7 @@ body .article .article__body {
   &__spring,
   &__summer,
   &__winter {
-    transition: opacity 3s linear;
+    // transition: opacity 3s linear;
     opacity: 0;
   }
 }
@@ -30,6 +30,10 @@ body .article .article__body {
   body .article .article__header,
   body .article .article__body {
     background-color: $season-autumn;
+    @media (prefers-color-scheme: dark) {
+      background-color: #121212 !important;
+    }
+
   }
 .has-seasons[data-season='autumn'] {
   .poem__images__autumn {

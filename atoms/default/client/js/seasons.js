@@ -28,6 +28,7 @@ function startSeasons() {
 }
 
 document.body.dataset.season = 'autumn';
+document.body.classList.add('has-seasons');
 // window.addEventListener('scroll', () => {
 //   const bodyData = document.body.dataset;
 //   if (window.scrollY > (window.innerHeight * 2)) {
